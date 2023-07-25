@@ -1,8 +1,8 @@
 pipeline { 
     agent any 
     environment { 
-        AWS_ACCESS_KEY_ID     = credentials('AKIA2XNLPBBM2OIIDVFL') 
-        AWS_SECRET_ACCESS_KEY = credentials('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')
+        AWS_ACCESS_KEY_ID     = credentials('aws_access_key_id') 
+        AWS_SECRET_ACCESS_KEY = credentials('aws_secret_access_key_id')
     }
     stages { 
         stage('Terraform Initialization') { 
